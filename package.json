@@ -1,0 +1,36 @@
+{
+  "name": "openai",
+  "version": "1.0.0",
+  "description": "character openai",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sse": "^0.8.0",
+    "body-parser": "^1.20.2",
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-sse": "github:omgimalexis/express-sse",
+    "mongoose": "^7.0.0",
+    "openai": "^3.2.0",
+    "sass": "^1.58.3",
+    "sse": "^0.0.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
+  }
+}

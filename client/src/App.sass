@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap')
+
+$main-font: 'Ubuntu', sans-serif
+
+$desktop: 1200px
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+ul
+  list-style: none
+  width: 100%
+
+.main,
+.main input
+  font-size: 16px
+  line-height: 24px
+  color: #353740
+  font-family: $main-font
+  white-space: pre-line
+
+.main
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-top: 60px
+
+.main h3
+  font-size: 32px
+  line-height: 40px
+  font-weight: bold
+  color: #202123
+  margin: 16px 0 40px
+
+.main form
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 50vw
+  border: 1px solid #353740
+  border-radius: 5px
+  box-shadow: 0px 0px 4px 1px hsl(0deg 0% 0%/ .5)
+  margin: 1rem 0
+  padding: 1rem
+  text-align: center
+
+label
+  font-weight: bold
+
+textarea[type="text"]
+  padding: 12px 16px
+  border: 1px solid #10a37f
+  border-radius: 4px
+  box-shadow: 0px 0px 4px 0px hsl(0deg 0% 0%/ .5)
+  outline-color: #10a37f
+  width: 100%
+  &::placeholder
+    color: #8e8ea0
+    opacity: 1
+
+fieldset
+  width: 100%
+  border: 0px
+  margin-bottom: 1rem !important
+
+.buttons
+  display: flex
+  justify-content: space-evenly
+  align-content: center
+
+.submitButton
+  padding: .5rem 1rem
+  margin: .5rem
+  background-color: #10a37f
+  font-size: .8rem
+  border: none
+  border-radius: 5px
+  text-align: center
+  cursor: pointer
+  outline: none
+  box-shadow: 0px 0px 4px 1px hsl(0deg 0% 0%/ .5)
+  white-space: nowrap
+  &:hover
+    color: white
+    transition-duration: .2s
+  @media screen and ( min-width: $desktop )
+    font-size: 1rem
+    padding: 1rem
+    margin: 1rem
+    min-width: 200px
+    
+
+.inactive
+  display: none
+
+.interaction_input
+  margin: 1.5rem 0
+
+.main .result
+  font-weight: bold
+  margin-top: 40px
+
+.result
+  text-align: left
+
+.chats
+  margin-bottom: 1.5rem
+  p
+    &:last-child
+      color: darken(#10a37f, 15%)
+      margin-top: .5rem
+
+.chatName
+  color: #10a37f
+  text-decoration: underline
+  text-decoration-color: black
+  text-decoration-thickness: 2px
+
+.assistant
+  margin-top: 1rem
+
+.user
+  margin-top: .2rem
+
+.stream
+  margin: 1.5rem 0
+  text-align: left
+  border: 1px solid black
+  border-radius: 5px
+  box-shadow: 0px 0px 4px 1px hsl(0deg 0% 0%/.5)
+  padding: 1rem
