@@ -2,13 +2,8 @@ const express = require("express");
 const router = express.Router();
 const QueryModel = require("../../models/character");
 const ChatModel = require("../../models/chatModel");
-const createSession = require("better-sse").createSession;
 require("dotenv").config();
-const cors = require("cors")
-let corsOptions = {
-  origin: 'https://localhost:3000',
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-}
+
 
 router.get("/newquery", async (req, res) => {
   const session = await createSession(req, res);
@@ -18,7 +13,7 @@ router.get("/newquery", async (req, res) => {
 });
 
 // save stream GPT 3.5 to database
-router.post("/newchat", cors(corsOptions), (req, res) => {
+router.post("/newchat", (req, res) => {
   const { roles, result } = req.body;
   console.log("router", req.body)
 

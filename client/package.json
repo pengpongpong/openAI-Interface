@@ -14,8 +14,6 @@
     "classnames": "^2.3.2",
     "dotenv": "^16.0.3",
     "framer-motion": "^10.0.2",
-    "os": "^0.1.2",
-    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
@@ -23,14 +21,7 @@
     "react-scripts": "5.0.1",
     "sass": "^1.58.3",
     "sse": "github:mpetazzoni/sse.js",
-    "url": "^0.11.0",
-    "util": "^0.12.5",
     "web-vitals": "^2.1.4"
-  },
-  "browser": {
-    "fs": false,
-    "os": false,
-    "path": false
   },
   "scripts": {
     "start": "react-scripts start",
